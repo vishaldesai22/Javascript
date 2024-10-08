@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"> 
+function CreateFunction()
+{
+var mywin=window.open("","MyWindow","width=300,height=300") 
+mywin.document.write("<html>");
+ mywin.document.write("<head>");
+ mywin.document.write("<title>WEB SITE DEMO</title>");
+ mywin.document.write("</head>");
+ mywin.document.write("<body>");
+ mywin.document.write("<h2>This is a new Web Page</h2>"); 
+ mywin.document.write("<h3 style='color:red;font-size:30'>Welcome User!!!</h3>");
+ mywin.document.write("<a href='www.google.com'>CLick here");
+ mywin.document.write("</body>"); 
+ mywin.document.write("</html>");
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<input type="button" value="Create Web Page" onclick="CreateFunction()"/>
+</form>
+</body>
+</html>

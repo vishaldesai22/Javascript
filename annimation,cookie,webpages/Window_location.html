@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="ID"></p>
+<p id="id1"></p>
+<p id="id2"></p>
+<p id="id3"></p>
+<script type="text/javascript">
+document.getElementById("ID").innerHTML = "This web page is at path: "+ window.location.pathname;
+document.getElementById("id1").innerHTML = "This web page is at hostname: " + window.location.hostname;
+document.getElementById("id2").innerHTML = "Protocol used: " + window.location.protocol;
+
+document.getElementById("id3").innerHTML = "new page will load: " + window.location.assign;
+</script>
+</body>
+</html>
