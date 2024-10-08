@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript"> 
+var re = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+function testMatch()
+{
+	var str=textfield.value;
+	if(re.test(str))
+	{
+		alert("Your email is " + str);
+	}
+	else
+	{
+		alert("Please enter correct eamil");
+	}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Checking valid email id</h2>
+
+Enter Email id <input type="text" id="textfield"/>
+
+<input type="button" value="Check" onclick="testMatch()">
+
+
+</body>
+</html>

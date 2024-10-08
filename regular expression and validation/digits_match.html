@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript"> 
+re=/\d/;//contains digits
+
+function testMatch()
+{
+	var str=textfield.value;
+	if(re.test(str))
+	{
+		alert("The String " + str + " contains digits");
+	}
+	else
+	{
+		alert("The String " + str + " does not contains digits");
+	}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Checking availability of digits</h2>
+
+Enter a string<input type="text" id="textfield"/>
+<input type="button" value="Check" onclick="testMatch()">
+
+</body>
+</html>

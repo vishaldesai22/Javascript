@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript"> 
+ var re = /^[7-9][0-9]{9}$/;
+function testMatch()
+{
+	var str=textfield.value;
+	if(re.test(str))
+	{
+		alert("Your mobile number is " + str);
+	}
+	else
+	{
+		alert("Please enter correct mobile numebr");
+	}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Checking valid mobile number</h2>
+
+Enter a moile number <input type="text" id="textfield"/>
+<input type="button" value="Check" onclick="testMatch()">
+
+</body>
+</html>

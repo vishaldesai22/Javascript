@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"> 
+function TestString(str)
+{
+re=/[az]/; 
+if(re.test(str))
+{
+    alert("The letter a or z or both are present in the string");
+}
+else
+{
+    alert("String does not contain a or z or both");
+}
+}
+
+
+</script>
+</head>
+<body>
+<h2>Example of Regular Expression</h2>
+<script type="text/javascript">
+var input_str=prompt("Enter some string here","");
+ TestString(input_str);
+</script>
+</body>
+</html>

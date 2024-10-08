@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rollover Text</title>
+<script language="Javascript">
+Rollimage = new Array() //creating array of three images Rollimage[0]=new Image(100,100)
+Rollimage[0].src='Mango.jpg' //assigning each image at each index of array
+Rollimage[1]=new Image(100,100)
+ Rollimage[1].src='Orange.jpg'
+Rollimage[2]=new Image(100,100) 
+Rollimage[2].src='banana.jpg'
+</script>
+</head>
+ <body>
+<table>
+<tr>
+<td>
+<a>
+</a>
+</td>
+<td>
+ <IMG src='Mango.jpg' name="fruit">
+ <a onmouseover="document.fruit.src=Rollimage[0].src">
+<b><u>Mango</u></b>
+</a>
+<br/><br/><br/><br/>
+<a onmouseover="document.fruit.src=Rollimage[1].src">
+<b><u>Orange</u></b>
+</a>
+<br/><br/><br/><br/>
+<a onmouseover="document.fruit.src=Rollimage[2].src">
+<b><u>Banana</u></b>
+</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

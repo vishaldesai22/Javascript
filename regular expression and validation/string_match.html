@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript"> 
+re=/student/i;
+function testMatch()
+{
+	var str=textfield.value;
+	if(re.test(str))
+	{
+		alert("The String " + str + " contains in the given pattern");
+	}
+	else
+	{
+		alert("The String " + str + " does not contains in the given pattern");
+	}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Checking availability of a string</h2>
+
+Enter a string<input type="text" id="textfield"/>
+<input type="button" value="Check" onclick="testMatch()">
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript"> 
+
+function testMatch()
+{
+	var str=textfield.value;
+	var re=str.match(/student/g)
+	if(re!=null)
+	{
+		alert("The String " + str + " contains pattern");
+	}
+	else
+	{
+		alert("The String " + str + " does not contains pattern");
+	}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Checking availability of non digits</h2>
+
+Enter a string<input type="text" id="textfield"/>
+<input type="button" value="Check" onclick="testMatch()">
+
+</body>
+</html>

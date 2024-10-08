@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript"> 
+re=/[a-z]/;
+function testMatch()
+{
+	var str=textfield.value;
+	if(re.test(str))
+	{
+		alert("The String " + str + " contains in the range a-z");
+	}
+	else
+	{
+		alert("The String " + str + " does not contains in the range a-z");
+	}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Checking availability of character in given range</h2>
+
+Enter a string<input type="text" id="textfield"/>
+<input type="button" value="Check" onclick="testMatch()">
+
+</body>
+</html>

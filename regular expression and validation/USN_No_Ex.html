@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pattern Matching using Regular Expression </title>
+<script type="text/javascript"> 
+function TestString(str)
+{
+ 
+document.write("The given string is: ");
+ document.write("<em>"+str+"</em>"+"<br/>");    
+ var i=str.match(/[1234][A-Z]{2}\d{2}[A-Z]{2}\d{3}/);
+  if(i==null)
+return false; 
+else
+return true;
+}
+</script>
+</head>
+<body>
+<h3>
+<script type="text/javascript">
+var input_str=prompt("Enter Your University Seat number here","");
+ if(TestString(input_str))
+document.write("valid Seat Number");
+else
+document.write("Invalid Seat Number");
+</script>
+</h3>
+</body>
+</html>

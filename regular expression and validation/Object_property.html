@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pattern Matching using Regular Expression </title>
+<script type="text/javascript"> 
+function TestString(str)
+{
+// for each Sunil - replace it with Mr. and then Sunil 
+alert(str.replace(/Sunil/g, 'Mr.$&'));
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+str= "Sunil kumar, Sunil Shetty,Sunil Kale"; 
+document.write(str);
+</script>
+<button onclick="TestString(str)">Change</button>
+</body>
+</html>

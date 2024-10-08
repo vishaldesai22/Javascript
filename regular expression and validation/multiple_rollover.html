@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rollover Text</title>
+<script language="Javascript"> 
+function MyFunction(choice)
+{
+if(choice==1)
+{
+document.fruit.src='Mango.jpg' 
+MyWindow=window.open('','infoWindow', 'height="20",width="20",left="30",top="30"')
+ MyWindow.document.write('Great source of Vitamin A and Vitamin C supplement')
+}
+if(choice==2)
+{
+document.fruit.src='Orange.jpg'
+
+MyWindow=window.open('','infoWindow', 'height="20",width="20",left="30",top="40"');
+ MyWindow.document.write('Great source of Vitamin C supplement and rich antioxidant')
+}
+if(choice==3)
+{
+document.fruit.src='banana.jpg'
+ MyWindow=window.open('','infoWindow', 'height="20",width="20",left="30",top="50"');
+ MyWindow.document.write('Full of Potassium and Fiber')
+}
+}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<a>
+<IMG src="mango.jpg" name="fruit" style="width=10px;height=20px;">
+</a>
+</td>
+<td>
+<a onmouseover="MyFunction(1)" onmouseout="MyWindow.close();">
+<b><u>Mango</u></b>
+</a>
+<br/><br/><br/><br/>
+<a onmouseover="MyFunction(2)" onmouseout="MyWindow.close();">
+<b><u>Orange</u></b>
+</a>
+<br/><br/><br/><br/>
+<a onmouseover="MyFunction(3)" onmouseout="MyWindow.close();">
+<b><u>Banana</u></b>
+</a>
+</td>
+</tr>
+</table>
+</body>
+</html>
